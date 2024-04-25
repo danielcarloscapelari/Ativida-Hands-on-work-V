@@ -1,0 +1,142 @@
+/* Estilos para o cabeçalho */
+header {
+    background-color: #FFC107; /* Changed to a lighter orange */
+    color: #fff;
+    padding: 15px; /* Increased padding to 15px */
+    text-align: center;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #FF8C00;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px; /* Increased margin to 15px */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff; /* Changed text color to white */
+    padding: 25px 0; /* Increased padding to 25px */
+    text-align: center;
+}
+
+.footer-content {
+    background-color: #000000;
+    padding: 20px 0;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 15px; /* Increased margin to 15px */
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Increased font size to 18px */
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
+.footer-col {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin-right: 5%;
+  }
+
+
+/* Estilos para os links de login */
+.login {
+    margin-right: 15px; /* Increased margin to 15px */
+}
+
+.dropdown-menu {
+    background-color: #FF8C00;
+    color: #fff;
+    border-radius: 5px; /* Added border radius */
+    padding: 0;
+}
+
+.dropdown-item {
+    color: #fff;
+    padding: 12px 25px; /* Increased padding to 12px 25px */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #FFC107; /* Changed background color to lighter orange */
+    color: #fff;
+}
+
+/* Estilos adicionais personalizados aqui */
+.additional-content {
+    padding: 50px 0;
+    background-color: #fff; /* Cor de fundo da seção de conteúdo adicional */
+}
+
+.additional-content h3 {
+    margin-top: 20px;
+}
+
+.additional-content p {
+    font-size: 16px;
+}
+
+.additional-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Deixa as imagens dos produtos como círculos */
+}
+
+.additional-content .text-orange {
+    color: #f16e00; /* Cor de texto laranja */
+}
+
+/* Animações */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+}
