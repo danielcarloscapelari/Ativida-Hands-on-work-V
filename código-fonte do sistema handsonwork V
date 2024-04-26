@@ -90,6 +90,53 @@
             animation-name: pulse;
             animation-iteration-count: infinite;
         }
+        /* Estilos para a barra de pesquisa */
+        #search-form {
+            margin-right: 20px;
+        }
+        #search-input {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+        #search-button {
+            padding: 6px 12px;
+            border-radius: 5px;
+            background-color: #ffa600;
+            border: none;
+            color: #fff;
+        }
+        /* Estilos para o formulário de e-mail */
+        .newsletter-form {
+            background-color: #f16e00; /* Cor laranja */
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .newsletter-form h3 {
+            margin-bottom: 20px;
+        }
+        .newsletter-form input[type="email"] {
+            width: calc(100% - 90px); /* Ajuste para o botão */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .newsletter-form button {
+            width: 80px; /* Ajuste para o botão */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff8c00; /* Laranja mais claro */
+            color: white;
+            cursor: pointer;
+        }
+        .newsletter-form button:hover {
+            background-color: #ffaa33; /* Laranja ainda mais claro */
+        }
     </style>
 </head>
 <body>
@@ -100,6 +147,11 @@
 
 <nav>
     <div class="container d-flex justify-content-between align-items-center">
+        <!-- Barra de pesquisa -->
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+            <button type="submit" id="search-button">Buscar</button>
+        </form>
         <a href="#" class="text-orange">Home</a>
         <a href="#" class="text-orange">Produtos</a>
         <a href="#" class="text-orange">Sobre</a>
@@ -173,6 +225,16 @@
                 <img src="file:///C:/Users/Pichau/Downloads/br-11134207-7r98o-lrq6rvhah2rf6d.webp" alt="Imagem 3" class="img-thumbnail">
             </div>
         </div>
+    </div>
+</section>
+
+<section class="newsletter-form">
+    <div class="container">
+        <h3>Fique por dentro das novidades!</h3>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Seu endereço de e-mail">
+            <button type="submit">Inscrever</button>
+        </form>
     </div>
 </section>
 
